@@ -16,10 +16,14 @@
   <ul>
     <li><a class="active" href="Homepage.php">Select Destination</a></li>
   </ul><br>
-
+  
+  <!-- Image Header -->
+  <center><img class="imgGB" src="images/bus.png" alt="Good Bus"></center>
+  
+  <!-- Choose Destinations -->
   <div class="DestinationDate">
   <form action="bus.php" onsubmit="return validation(event)" id="Form">
-  <!-- Dropdown Destinations -->
+  
     <!-- From Destination -->
     <label for="From">From:</label>
     <select name="From" id="From">
@@ -53,25 +57,8 @@
     <input type="submit" onclick="validation()" class="button" id="SearchBus" value="Search Bus" require>
   </form>
   </div>
-
-  <script type="text/javascript">
-
-    function validation(){
-      if(document.getElementById("From").value == "Choose Destination" || document.getElementById("To").value == "Choose Destination"){
-        alert("Please fill in all the forms!");
-        return false;
-      }
-      else if (document.getElementById("To").value == document.getElementById("From").value) {
-        alert("Please select a different destination!");
-        return false;
-      }
-      else {
-        return true;
-      }
-    }
-
-  </script>
-
+  
+  <!-- Text -->
   <div class="HomepageBox">
     <div class="box">
       <div class="titles">
@@ -97,6 +84,22 @@
       </p>
     </div>
   </div>
-
+  
+  <!-- Warning message -->
+  <script type="text/javascript">
+    function validation(){
+      if(document.getElementById("From").value == "Choose Destination" || document.getElementById("To").value == "Choose Destination"){
+        alert("Please fill in all the forms!");
+        return false;
+      }
+      else if (document.getElementById("To").value == document.getElementById("From").value) {
+        alert("Please select a different destination!");
+        return false;
+      }
+      else {
+        return true;
+      }
+    }
+  </script>
 </body>
 </html>
