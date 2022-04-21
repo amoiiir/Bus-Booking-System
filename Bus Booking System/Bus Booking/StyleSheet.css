@@ -1,0 +1,384 @@
+
+    html {
+      font-family: Helvetica;
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid black;
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+      width: 100px;
+      padding: 30px;
+      /* margin: 250px; */
+    }
+
+    td, th {
+      border: 1px solid black;
+      padding: 10px 20px;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    .seat{
+      text-align: center;
+      border: 1px solid black;
+      border-left-width: medium;
+      border-right-width: medium;
+    }
+
+    table.center {
+    width: 30%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+   .remarks{
+     text-align: center;
+     /* border: 1px solid black; */
+   }
+
+
+
+
+/*horizontal navigation bar */
+/* note: horizontal uses block, while vertical uses inline*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+
+}
+.logo {
+height: 40px;
+
+}
+
+li {
+float: left;
+}
+
+h1{
+font-size: 40px;
+letter-spacing: -2px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: lightgreen ;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 20px 20px;
+text-decoration: none;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li a:hover {
+    background-color: lightgreen;
+
+}
+
+/* Let user know what page they are on */
+li a.active{
+    background-color: darkgreen;
+}
+li a:hover:not(.active) {
+    background-color: lightgreen;
+}
+/* Let user know what page they are on */
+/*horizontal navigation bar */
+
+body{
+    background-color: #fff0f5;
+}
+
+.title{
+  margin: auto;
+}
+
+.details{
+  position: absolute;
+  margin: auto;
+  text-align: left;
+  padding: 10px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
+
+.bus{
+  margin: auto;
+  width: 500px;
+  height: 270px;
+  border: 3px solid blue;
+  padding: 10px;
+}
+
+.seaticon{
+  transform:scaleX(-1);
+}
+
+.details_left{
+  position : relative;
+  left : 30%;
+  text-align : left;
+  line-height: 27px;
+  height: 120px;
+  width: 70%;
+}
+
+/* Submit input */
+#SearchBus {
+    display: block;
+    margin: 0 auto;
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 24%;
+    height: 20%;
+    opacity: 0.9;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+#SearchBus:hover {
+    opacity:1;
+    background-color: #037048;
+  }
+
+/* Text */
+.HomepageBox {
+    margin-left: 18%;
+    margin-top: 2%;
+    /* padding: 30px;
+    margin: auto;
+    width: 73%;
+    justify-content: center; */
+}
+
+.HomepageBox::after {
+    content: "";
+    clear: both;
+    display: inline-block;
+}
+
+.titles {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.box {
+    float: left;
+    text-align: center;
+    background-color: #0c7462 ;
+    color: beige;
+    padding: 50px;
+    margin: 20px;
+    width: 180px;
+    height: 210px;
+    border-radius:  10%;
+    border: 1px solid #94CCD0;
+    justify-content: center;
+}
+
+.From, .To, .Date {
+    font-size: 16px;
+}
+
+/* To, From, Date */
+.DestinationDate {
+    margin: auto;
+    width: 52%;
+    padding-top: 50px;
+}
+
+select, input[type="date"] {
+    background:#c6fcfc;
+    width: 180px;
+    height: 40px;
+    color: rgb(3, 88, 74);
+    cursor: pointer;
+    border: 1px solid rgb(3, 88, 74);
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.title{
+  margin: auto;
+}
+
+h4 {
+  margin-left: 120px;
+  color:black;
+}
+
+h2 {
+  color:black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 120px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+th{
+  text-align: left;
+  padding: 16px;
+}
+
+td {
+  text-align: left;
+  padding: 14px;
+  font-weight: bold;
+}
+
+tr:nth-child(even){background-color: rgb(240, 239, 239)}
+
+tr:nth-child(odd){background-color: white}
+
+th {
+  background-color: #3DED97;
+  color: white;
+  text-align: left;
+}
+
+.btn{
+  background-color: white;
+  outline: white;
+
+}
+
+.open-button {
+  display: block;
+  margin: 0 auto;
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  opacity: 0.9;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.open-button:hover {
+  display: block;
+  margin: 0 auto;
+  background-color: #026641;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  opacity: 0.9;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.form_passenger{
+  border-color: black
+}
+
+/* Set a style for the submit/register button */
+.proceedbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.proceedbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Mark input boxes that gets an error on validation: */
+text.invalid, age.invalid, email.invalid, number.invalid  {
+  background-color: #ffdddd;
+}
+
+
+.details_passenger{
+  border: 1px solid lightgreen;
+  width: 600px;
+  margin-left: 500px;
+  padding: 10px;
+  /* text-align: center; */
+}
+/* Full-width input fields */
+input[type=text], input[type=age], input[type=email], input[type=phonenumber] {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0 5px 0;
+  display: inline-block;
+  border: none;
+  background: #cacaca;
+}
+
+input[type=text]:focus, input[type=age]:focus, input[type=email]:focus, input[type=phonenumber]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,195 @@
+/* Payment Css */
+/*horizontal navigation bar */
+/* note: horizontal uses block, while vertical uses inline*/
+body{
+
+      background-color: #fff0f5;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+
+}
+.logo {
+height: 40px;
+
+}
+
+h1{
+  color: lightgreen;
+}
+
+li {
+float: left;
+}
+
+h2{
+font-size: 40px;
+letter-spacing: -2px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: lightgreen ;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 20px 20px;
+text-decoration: none;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li a:hover {
+    background-color: lightgreen;
+
+}
+ /* Let user know what page they are on */
+ li a.active{
+  background-color: darkgreen;
+}
+li a:hover:not(.active) {
+  background-color: lightgreen;
+}
+/* Let user know what page they are on */
+
+/*Payment css */
+/* next */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 0px;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-50,
+.col-75 {
+  padding: 0 16px;
+  font-size: 20px;
+}
+
+input[type=text] {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.open-button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 0 470px;
+  border: none;
+  width: 35%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.open-button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+/*Payment css */
+
+/* Passenger css*/
+
+/* Full-width input fields */
+input[type=text], input[type=age], input[type=email], input[type=phonenumber] {
+  width: 50%;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=age]:focus, input[type=email]:focus, input[type=phonenumber]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.proceedbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.proceedbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Mark input boxes that gets an error on validation: */
+text.invalid, age.invalid, email.invalid, number.invalid  {
+  background-color: #ffdddd;
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+}
+
+.credentials{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  border: 1px solid black;
+  margin: 0;
+  width: 600px;
+  border-width: 1px;
+  float: center;
+  border-radius: 10px;
+  border-left: 50%;
+  border-right: 50%;
+  padding: 10px;
+  /* text-align: center; */
+}
