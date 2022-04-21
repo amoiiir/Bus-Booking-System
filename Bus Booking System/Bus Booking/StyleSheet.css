@@ -161,6 +161,11 @@ body{
   width: 70%;
 }
 
+.imgGB {
+  width: 100%;
+  background-size: cover;
+}
+
 /* Submit input */
 #SearchBus {
     display: block;
@@ -184,7 +189,7 @@ body{
 
 /* Text */
 .HomepageBox {
-    margin-left: 18%;
+    margin-left: 14%;
     margin-top: 2%;
     /* padding: 30px;
     margin: auto;
